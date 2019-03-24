@@ -1,49 +1,120 @@
+/********************** Google Font Families ****************************/
+/*
+font-family: 'Trochut', cursive;
+font-family: 'Jomhuria', cursive;
+font-family: 'Macondo Swash Caps', cursive;
+font-family: 'Holtwood One SC', serif;
+font-family: 'Ramaraja', serif;
+font-family: 'IM Fell French Canon SC', serif;
+font-family: 'Manuale', serif;
+font-family: 'Donegal One', serif; 
+*/
+
+
+.Placeholder{
+	color: Yellow;
+	background-color: black;
+}
+
+.row{
+	margin: 0px;
+}
+
 #about, #portfolio, #resume, #contact{
     margin-top: 15px;
 }
-        /*Black color to the text*/
-        .tabs .tab a{
-            color:rgb(0, 121, 177);
-        } 
 
-        /*Text color on hover*/
-        .tabs .tab a:hover {
-            background-color:#eee;
-            color:rgb(0, 121, 177);
-        } 
+.projects{
+	margin-bottom: 2%;
+}
 
-        /*Background and text color when a tab is active*/
-        .tabs .tab a.active {
-            background-color:rgba(38, 193, 214, 0.24);
-            color:rgb(0, 121, 177);
-        } 
+.projectRow{
+	margin: 0px;
+}
 
-        /*Color of underline*/
-        .tabs .indicator {
-            background-color:rgb(0, 121, 177);
-        } 
+.fab, .linkedInBtn, .gitHubBtn{
+	max-height: 64px;
+}
 
-        .placeholderImages{
-            width: 100%;
-        }
+.portfolioButtons{
+	background-color: rgb(13, 129, 85);
+}
 
-        nav{
-            background-color:rgba(38, 193, 214, 0.24);
-                box-shadow: none!important;
-            
-        }
+.btn:hover{
+	background-color: rgb(19, 163, 108);
+}
 
-        .navText{
-            color: rgb(0, 121, 177);
-        }
+/********************************** NAV Bar **********************************/
+#logoText{
+	font-family: 'Trochut', cursive;
+}
 
-        #logoText{
-            padding-left: 10px;
-        }
+#nav-mobile{
+padding-right: 5%;
+}
+
+/*Black color to the text*/
+.tabs .tab a{
+	color:rgb(13, 129, 85);
+	font-family: 'Donegal One', serif; 
+} 
+/*Text color and background on hover*/
+.tabs .tab a:hover {
+    background-color:rgb(214, 214, 214);
+    color:rgb(13, 129, 85);
+} 
+/*Background and text color when a tab is active*/
+.tabs .tab a.active {
+    background-color:rgba(13, 129, 85, 0.733) !important;
+    color:rgb(255, 255, 255);
+} 
+/*Color of underline*/
+.tabs .indicator {
+    background-color:rgb(13, 129, 85);
+} 
+.placeholderImages{
+    width: 100%;
+}
+nav{
+    background-color:rgb(13, 129, 85);
+        /* box-shadow: none!important; */
+}
 
 
+/********************************** Footer Bar **********************************/
+footer{
+	background-color:rgb(13, 129, 85) !important;
+	color: white;
+}
 
-        /* Hover Effects */
+.footer-copyright{
+	padding: 0px !important;
+}
+
+#footerInfo{
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+}
+
+#copyright{
+	vertical-align: middle;
+	padding-left: 15px;
+}
+
+#footerRow{
+	max-height: 5%;
+	margin:0px;
+}
+
+.ftlinkedInBtn, .ftgitHubBtn{
+	color: white;
+	padding-left: 15px;
+	font-size: 24px;
+	vertical-align: middle;
+}
+
+/********************************** Hover Effects *********************************/
 .hvrbox, .hvrbox * {
 	box-sizing: border-box;
 }
@@ -82,8 +153,9 @@
 	opacity: 1;
 }
 .hvrbox .hvrbox-text {
+	font-family: 'Manuale', serif;
 	text-align: center;
-	font-size: 18px;
+	font-size: 28px;
 	display: inline-block;
 	position: absolute;
 	top: 50%;
@@ -103,3 +175,15 @@
 .hvrbox.active .hvrbox-text_mobile {
 	display: block;
 }
+
+
+/*****************************STICKY FOOTER CODE *************************/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
