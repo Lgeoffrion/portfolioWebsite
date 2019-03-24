@@ -11,6 +11,7 @@ font-family: 'Donegal One', serif;
 */
 
 
+
 .Placeholder{
 	color: Yellow;
 	background-color: black;
@@ -21,7 +22,14 @@ font-family: 'Donegal One', serif;
 }
 
 #about, #portfolio, #resume, #contact{
-    margin-top: 15px;
+	margin-top: 15px;
+	background-color: rgba(44, 44, 44, 0.096);
+	padding: 5px;
+	font-family: 'Donegal One', serif; 
+}
+
+#about{
+font-size: 18px;
 }
 
 .projects{
@@ -32,16 +40,31 @@ font-family: 'Donegal One', serif;
 	margin: 0px;
 }
 
-.fab, .linkedInBtn, .gitHubBtn{
+.fab, .linkedInBtn, .gitHubBtn, .emailBtn{
 	max-height: 64px;
 }
 
 .portfolioButtons{
 	background-color: rgb(13, 129, 85);
+	font-family: 'Donegal One', serif; 
 }
 
 .btn:hover{
 	background-color: rgb(19, 163, 108);
+}
+
+.icon{
+	font-size: 40px;
+}
+
+.skills{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box, .icon, .heading{
+	margin: 0 auto;
 }
 
 /********************************** NAV Bar **********************************/
@@ -72,7 +95,7 @@ padding-right: 5%;
 .tabs .indicator {
     background-color:rgb(13, 129, 85);
 } 
-.placeholderImages{
+.profilePic{
     width: 100%;
 }
 nav{
@@ -85,6 +108,8 @@ nav{
 footer{
 	background-color:rgb(13, 129, 85) !important;
 	color: white;
+	font-family: 'Trochut', cursive;
+	margin-top:5px;
 }
 
 .footer-copyright{
@@ -107,7 +132,7 @@ footer{
 	margin:0px;
 }
 
-.ftlinkedInBtn, .ftgitHubBtn{
+.ftlinkedInBtn, .ftgitHubBtn, .ftemailBtn{
 	color: white;
 	padding-left: 15px;
 	font-size: 24px;
@@ -153,7 +178,7 @@ footer{
 	opacity: 1;
 }
 .hvrbox .hvrbox-text {
-	font-family: 'Manuale', serif;
+	font-family: 'Donegal One', serif; 
 	text-align: center;
 	font-size: 28px;
 	display: inline-block;
