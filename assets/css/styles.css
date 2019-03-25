@@ -57,15 +57,20 @@ font-size: 18px;
 	font-size: 40px;
 }
 
-.skills{
+.skillsRow{
 	text-align: center;
+	
+}
+
+.skills{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.box, .icon, .heading{
-	margin: 0 auto;
-}
 
 /********************************** NAV Bar **********************************/
 #logoText{
